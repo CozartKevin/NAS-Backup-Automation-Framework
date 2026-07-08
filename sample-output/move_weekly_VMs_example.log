@@ -1,3 +1,6 @@
+# Sanitized representative sample output.
+# These entries preserve the framework's log format and event style while replacing production names and paths.
+
 2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | BOOT | script | 0 | SUCCESS | bootstrap initialized
 2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | VALIDATE | /mnt/archive_storage/weekly_vms | 0 | OK | SRC validated
 2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | VALIDATE | /mnt/archive_storage/monthly_vms | 0 | OK | DST validated

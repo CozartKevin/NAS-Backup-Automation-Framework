@@ -1,3 +1,6 @@
+# Sanitized representative sample output.
+# These entries preserve the framework's log format and event style while replacing production names and paths.
+
 2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | BOOT | script | 0 | SUCCESS | bootstrap initialized
 2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | VALIDATE | /mnt/archive_storage/monthly_backups | 0 | OK | path validated
 2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | LOCK_CHECK | /tmp/trim_monthly_backup_example.lock | 0 | START | checking lock
