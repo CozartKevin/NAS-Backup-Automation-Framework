@@ -3,8 +3,8 @@
 logs/
 
 # Keep sanitized sample logs
-!sample-output/
-!sample-output/*.log
+!/sample-output/
+!/sample-output/*.log
 
 # Temporary files
 *.tmp
