@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+# ----------------------------
+# config.sh
+# Script library directories
+# ----------------------------
+
+SCRIPT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+export CORE_LIB_DIR="$SCRIPT_ROOT/lib/core"
+export BACKUP_LIB_DIR="$SCRIPT_ROOT/lib/backup"

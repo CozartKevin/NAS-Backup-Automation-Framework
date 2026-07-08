@@ -1,0 +1,34 @@
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Vim
+*.swp
+
+# Synology / NAS generated files
+@eaDir/
+
+# Test output
+sample-output/
+
+# Shell generated files
+*.pid
+*.lock
+
+# Backup files
+*.bak
+
+# Archive files used during testing
+*.zip
+
+# Local environment overrides
+local.config.sh

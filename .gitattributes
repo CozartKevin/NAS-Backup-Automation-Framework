@@ -1,2 +1,13 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Shell scripts should always use Unix line endings
+*.sh text eol=lf
+
+# Markdown and text files also use Unix line endings
+*.md text eol=lf
+*.txt text eol=lf
+
+# Git should not modify binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
