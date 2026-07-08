@@ -1,0 +1,22 @@
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | BOOT | script | 0 | SUCCESS | bootstrap initialized
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | VALIDATE | /mnt/archive_storage/monthly_backups | 0 | OK | path validated
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | LOCK_CHECK | /tmp/trim_monthly_backup_example.lock | 0 | START | checking lock
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | LOCK_ACQUIRE | /tmp/trim_monthly_backup_example.lock | 1 | SUCCESS | lock acquired
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | START | Script | 0 | SUCCESS | starting trim
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | MODE | Script | 0 | SUCCESS | EXECUTION_MODE=DRY_RUN
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | MODE | /mnt/archive_storage/monthly_backups | 0 | SUCCESS | mode=DRY_RUN
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | SCAN | /mnt/archive_storage/monthly_backups | 0 | SUCCESS | directory scan
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | DISCOVER | dates_count | 8 | SUCCESS | backup sets found
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | DISCOVER | dates_list | 8 | SUCCESS | 20260425;20260502;20260509;20260516;20260523;20260530;20260606;20260613
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | RETENTION | keep | 5 | SUCCESS | retention applied
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | RETENTION | delete_count | 3 | SUCCESS | scheduled deletions
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | DELETE | 20260425 | 0 | START | processing batch
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | DELETE | 20260425_AppServer01 | 0 | SIMULATED | would delete
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | DELETE | 20260502 | 0 | START | processing batch
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | DELETE | 20260502_AppServer01 | 0 | SIMULATED | would delete
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | DELETE | 20260509 | 0 | START | processing batch
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | DELETE | 20260509_AppServer01 | 0 | SIMULATED | would delete
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | SUMMARY | batch | 3/0 | SUCCESS | cleanup complete
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | END | Script | 0 | SUCCESS | trim finished
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | RUN_COMPLETE | script | 00:00:00 | SUCCESS | finished
+2026-06-19T18:51:07Z | 20260619T185107Z-6661 | INFO | NAS-CLEAR | TrimMonthlyBackupsExample | ExampleNAS | LOCK_RELEASE | /tmp/trim_monthly_backup_example.lock | 0 | SUCCESS | lock released

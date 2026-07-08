@@ -1,0 +1,35 @@
+# Sanitized representative sample output.
+# These entries preserve the framework's log format and event style while replacing production names and paths.
+
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | BOOT | script | 0 | SUCCESS | bootstrap initialized
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | VALIDATE | /mnt/primary_storage/windows_image_backups | 0 | OK | SRC validated
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | VALIDATE | /mnt/secondary_storage/windows_image_backups | 0 | OK | DST validated
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | VALIDATE | SYSTEM | 0 | OK | preflight passed
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | LOCK_CHECK | /tmp/copy_weekly_backup_example.lock | 0 | START | checking lock
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | LOCK_ACQUIRE | /tmp/copy_weekly_backup_example.lock | 1 | SUCCESS | lock acquired
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | START | Script | 0 | SUCCESS | starting backup workflow
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | MODE | Script | 0 | SUCCESS | EXECUTION_MODE=DRY_RUN
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | STAMP | /mnt/primary_storage/windows_image_backups | 0 | START | starting backup stamp
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | DISCOVER | folder_count | 3 | SUCCESS | folder discovery complete mode=non_date
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | DISCOVER | folder_list | 3 | SUCCESS | FileServer01;AppServer01;DatabaseServer01
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | STAMP_VALIDATE | /mnt/primary_storage/windows_image_backups | 3 | OK | expected=3 actual=3
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | STAMP | FileServer01 | 0 | START | renaming
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | RENAME | FileServer01->20260619_FileServer01 | 0 | SIMULATED | would rename
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | STAMP | AppServer01 | 0 | START | renaming
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | RENAME | AppServer01->20260619_AppServer01 | 0 | SIMULATED | would rename
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | STAMP | DatabaseServer01 | 0 | START | renaming
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | RENAME | DatabaseServer01->20260619_DatabaseServer01 | 0 | SIMULATED | would rename
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | SUMMARY | stamp | 3/0 | SUCCESS | stamp complete
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | COPY | /mnt/secondary_storage/windows_image_backups | 0 | START | starting backup copy
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | DISCOVER | folder_count | 3 | SUCCESS | folder discovery complete mode=non_date
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | DISCOVER | folder_list | 3 | SUCCESS | FileServer01;AppServer01;DatabaseServer01
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | COPY | FileServer01 | 0 | START | processing
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | COPY | FileServer01 | 0 | SIMULATED | would copy
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | COPY | AppServer01 | 0 | START | processing
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | COPY | AppServer01 | 0 | SIMULATED | would copy
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | COPY | DatabaseServer01 | 0 | START | processing
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | COPY | DatabaseServer01 | 0 | SIMULATED | would copy
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | SUMMARY | batch | 3/0 | SUCCESS | copy complete mode=non_date
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | SUMMARY | workflow | STAMP=SUCCESS COPY=SUCCESS | SUCCESS | backup workflow complete
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | RUN_COMPLETE | script | 00:00:00 | SUCCESS | finished
+2026-06-19T18:41:50Z | 20260619T184150Z-20900 | INFO | NAS-COPY | CopyWeeklyBackupsExample | ExampleNAS | LOCK_RELEASE | /tmp/copy_weekly_backup_example.lock | 0 | SUCCESS | lock released

@@ -21,9 +21,6 @@ logs/
 # Synology / NAS generated files
 @eaDir/
 
-# Test output
-sample-output/
-
 # Shell generated files
 *.pid
 *.lock

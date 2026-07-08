@@ -1,0 +1,32 @@
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | BOOT | script | 0 | SUCCESS | bootstrap initialized
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | VALIDATE | /mnt/archive_storage/weekly_vms | 0 | OK | SRC validated
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | VALIDATE | /mnt/archive_storage/monthly_vms | 0 | OK | DST validated
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | VALIDATE | SYSTEM | 0 | OK | preflight passed
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | LOCK_CHECK | /tmp/move_weekly_vms_example.lock | 0 | START | checking lock
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | LOCK_ACQUIRE | /tmp/move_weekly_vms_example.lock | 1 | SUCCESS | lock acquired
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | START | Script | 0 | SUCCESS | starting weekly VM move
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | MODE | Script | 0 | SUCCESS | EXECUTION_MODE=DRY_RUN
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | DISCOVER | folder_count | 6 | SUCCESS | folder discovery complete
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | DISCOVER | folder_list | 6 | SUCCESS | 20260516_AppServerVM01;20260516_AppServerVM02;20260516_DatabaseVM01;20260516_FileServerVM01;20260516_UtilityVM01;20260516_ControlSystemVM01
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | MOVE | 20260516_AppServerVM01 | 0 | START | processing
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | MOVE | 20260516_AppServerVM01 | 0 | SIMULATED | would move
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | CLEAN | 20260516_AppServerVM01 | 0 | SIMULATED | would remove empty directory
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | MOVE | 20260516_AppServerVM02 | 0 | START | processing
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | MOVE | 20260516_AppServerVM02 | 0 | SIMULATED | would move
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | CLEAN | 20260516_AppServerVM02 | 0 | SIMULATED | would remove empty directory
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | MOVE | 20260516_DatabaseVM01 | 0 | START | processing
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | MOVE | 20260516_DatabaseVM01 | 0 | SIMULATED | would move
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | CLEAN | 20260516_DatabaseVM01 | 0 | SIMULATED | would remove empty directory
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | MOVE | 20260516_FileServerVM01 | 0 | START | processing
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | MOVE | 20260516_FileServerVM01 | 0 | SIMULATED | would move
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | CLEAN | 20260516_FileServerVM01 | 0 | SIMULATED | would remove empty directory
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | MOVE | 20260516_UtilityVM01 | 0 | START | processing
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | MOVE | 20260516_UtilityVM01 | 0 | SIMULATED | would move
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | CLEAN | 20260516_UtilityVM01 | 0 | SIMULATED | would remove empty directory
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | MOVE | 20260516_ControlSystemVM01 | 0 | START | processing
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | MOVE | 20260516_ControlSystemVM01 | 0 | SIMULATED | would move
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | CLEAN | 20260516_ControlSystemVM01 | 0 | SIMULATED | would remove empty directory
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | SUMMARY | batch | 6/0 | SUCCESS | move complete
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | END | Script | 0 | SUCCESS | move finished
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | RUN_COMPLETE | script | 00:00:00 | SUCCESS | finished
+2026-06-19T18:50:13Z | 20260619T185013Z-30665 | INFO | NAS-MOVE | MoveWeeklyVMsExample | ExampleNAS | LOCK_RELEASE | /tmp/move_weekly_vms_example.lock | 0 | SUCCESS | lock released
