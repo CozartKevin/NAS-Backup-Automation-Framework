@@ -2,6 +2,10 @@
 *.log
 logs/
 
+# Keep sanitized sample logs
+!sample-output/
+!sample-output/*.log
+
 # Temporary files
 *.tmp
 
