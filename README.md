@@ -27,7 +27,7 @@ The end result is a more maintainable automation framework that:
 * Produces consistent structured logs
 * Simplifies troubleshooting
 * Supports DRY_RUN validation
-* Provides a foundation for future reporting and log aggregation
+* Provides a foundation for reusable reporting and log aggregation.
 
 ---
 
