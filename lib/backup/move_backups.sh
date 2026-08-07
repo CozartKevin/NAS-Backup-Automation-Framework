@@ -64,7 +64,7 @@ for folderName in "${folders_to_move[@]}"; do
     local src_path="$src/$folderName"
     local dst_path="$dst/$folderName"
 
-    log_event "INFO" "MOVE" "$folderName" "0" "START" "processing"
+    # log_event "INFO" "MOVE" "$folderName" "0" "START" "processing"
     
 
     execute_move "$src_path" "$dst_path" "$folderName"

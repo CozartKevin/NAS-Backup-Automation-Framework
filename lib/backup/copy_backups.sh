@@ -95,7 +95,7 @@ for folderName in "${folders_to_copy[@]}"; do
     local dst_path="$dst/$folderName"
     local rc
 
-    log_event "INFO" "COPY" "$folderName" "0" "START" "processing"
+    # log_event "INFO" "COPY" "$folderName" "0" "START" "processing"
 
     if [[ -d "$dst_path" ]]; then
         execute_sync "$src_path" "$dst_path" "$folderName"
