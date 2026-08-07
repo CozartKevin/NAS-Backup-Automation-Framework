@@ -31,6 +31,14 @@ The end result is a more maintainable automation framework that:
 
 ---
 
+## Related Projects
+
+The NAS Backup Automation Framework implements a standardized structured logging format designed to support reusable reporting and monitoring.
+
+- **[Structured Log Report Generator](https://github.com/CozartKevin/Structured-Log-Report-Generator)** – Consumes the framework's structured logs and generates interactive HTML dashboards along with CSV and JSON reports for operational review.
+
+---
+
 ## Framework Features
 
 * Shared CORE and Backup library architecture
