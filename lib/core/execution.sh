@@ -230,21 +230,24 @@ execute_rename() {
         LIVE)
             log_event "INFO" "RENAME" "$rename_dst" "0" "START" "renaming"
 
-            file_ops_move "$src" "$dst"
+            file_ops_rename_directory "$src" "$dst"
             local rc=$?
 
             case "$rc" in
                 0)
-                    log_event "INFO" "RENAME" "$rename_dst" "0" "SUCCESS" "renamed"
+                    log_event "INFO" "RENAME" "$rename_dst" "$rc" "SUCCESS" "renamed"
                     ;;
                 1)
-                    log_event "ERROR" "RENAME" "$rename_dst" "0" "FAIL" "rename operation failed"
+                    log_event "ERROR" "RENAME" "$rename_dst" "$rc" "FAIL" "rename operation failed"
                     ;;
                 2)
-                    log_event "ERROR" "RENAME" "$rename_dst" "0" "FAIL" "invalid input"
+                    log_event "ERROR" "RENAME" "$rename_dst" "$rc" "FAIL" "invalid input"
+                    ;;
+                3)
+                    log_event "ERROR" "RENAME" "$rename_dst" "$rc" "FAIL" "destination already exists"
                     ;;
                 *)
-                    log_event "ERROR" "RENAME" "$rename_dst" "0" "FAIL" "unknown error code: $rc"
+                    log_event "ERROR" "RENAME" "$rename_dst" "$rc" "FAIL" "unknown error code: $rc"
                     ;;
             esac
 
@@ -252,7 +255,7 @@ execute_rename() {
             ;;
 
         *)
-            log_event "ERROR" "VALIDATE" "$rename_dst" "0" "FAIL" "invalid EXECUTION_MODE=$EXECUTION_MODE"
+            log_event "ERROR" "VALIDATE" "$rename_dst" "2" "FAIL" "invalid EXECUTION_MODE=$EXECUTION_MODE"
             return 2
             ;;
     esac
