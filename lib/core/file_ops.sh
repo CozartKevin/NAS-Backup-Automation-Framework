@@ -75,7 +75,19 @@ file_ops_sync() {
     fi
 }
 
+file_ops_rename_directory() {
+    local src="$1"
+    local dst="$2"
 
+    [[ -d "$src" ]] || return 2
+    [[ ! -e "$dst" ]] || return 3
+
+    mv -T -- "$src" "$dst" || return 1
+
+    [[ ! -e "$src" && -d "$dst" ]] || return 1
+
+    return 0
+}
 
 file_ops_verify_directory_match(){
     local src="$1"
